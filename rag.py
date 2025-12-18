@@ -300,7 +300,7 @@ def build_client() -> genai.Client:
             pass
 
     # Prefer environment-based credentials; do not hardcode API keys in source
-    api_key = "AIzaSyBuIGvtBxE0lE4a-Rf3asRfG8QflqZZbPk"  # Example key; replace with your own or set env var
+    api_key = ""  # Example key; replace with your own or set env var
     if api_key:
         return genai.Client(api_key=api_key)
     return genai.Client()
